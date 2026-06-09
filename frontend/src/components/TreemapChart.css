@@ -1,0 +1,82 @@
+.treemap-section {
+  margin-top: 24px;
+}
+
+.treemap-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.treemap-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e40af;
+  margin: 0 0 4px 0;
+}
+
+.treemap-subtitle {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.treemap-content {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.treemap-chart {
+  flex: 1;
+  min-width: 0;
+  height: 500px;
+}
+
+.treemap-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 20px;
+  min-width: 140px;
+}
+
+.legend-btn {
+  padding: 10px 20px;
+  border: 1.5px solid #e2e8f0;
+  background: #fff;
+  color: #334155;
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.legend-btn:hover {
+  border-color: var(--legend-color, #3b82f6);
+  color: var(--legend-color, #3b82f6);
+  background: #f8fafc;
+}
+
+.legend-btn.active {
+  background: var(--legend-color, #3b82f6);
+  color: #fff;
+  border-color: var(--legend-color, #3b82f6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+  .treemap-content {
+    flex-direction: column;
+  }
+  .treemap-legend {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: auto;
+    padding-top: 0;
+  }
+}

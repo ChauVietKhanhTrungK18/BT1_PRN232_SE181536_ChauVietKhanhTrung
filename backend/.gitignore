@@ -1,0 +1,23 @@
+# Build binaries
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+
+# User-specific & IDE files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Database files
+*.mdf
+*.ldf
+*.ndf
+
+# Local Cache CSV seed data downloaded from JHU
+Data/SeedData/*.csv
+!Data/SeedData/covid_seed_data.json
